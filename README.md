@@ -1,6 +1,6 @@
 # Jekyll构建的个人博客
    这是一个未来的程序员用jekyll框架在github page页面创建的个人博客，目前比较简陋，有空会改善  
-   [页面连接](https://wcrngu.github.io/jekyll_demo/)
+   [点击此处跳转到博客](https://wcrngu.github.io/jekyll_demo/)
 
 > 此博客采用github page做服务器，利用jekyll框架自动生成页面（js也可以实现，因为js解释器在客户端集成，不受github page的限制），利用一些简单的html+css知识以及本人很low的审美水平写基本页面，支持用markdown和html两种方法在-post文件夹下添加博文
    
