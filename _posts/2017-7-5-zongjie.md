@@ -11,6 +11,10 @@ resultSet对象为查询的结果集，一个statement只能有一个resultSet
 接下来讲讲今天遇到的坑：  
 1. 每次创建新项目都要重新导入jar驱动包，并非导入一次就可以无限使用
 2. String判断相等有两种，==判断如果不是同一个引用就返回false，equals判断只根据字符串值是否相同
+<<<<<<< HEAD
 3. out.print("<script>alert('账户密码错误！即将返回登陆界面')这句话威力太大了,可以用java输出js脚本，用法和java输出html相同
+=======
+3. （out.print("<script>alert('账户密码错误！即将返回登陆界面');）（这句话威力太大了，必须括起来，不然打不开TAT）可以用java输出js脚本，用法和java输出html相同
+>>>>>>> origin/gh-pages
 4. rs.next(); //取得的结果集rs的指针指向第一条之前，必须执行一次rs.next()才能指向第一行
 5. String str="select username,password from user where username='"+_user+"';"; 这里_user为String变量
