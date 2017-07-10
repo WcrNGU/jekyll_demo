@@ -7,7 +7,7 @@ title: 我的博客
 <p>最新文章</p>
 <ul>
     {% for post in site.posts %}
-    <li>
+    <li style="line-height: 50px;">
         {{ post.date | date_to_string }} <span class="jiantou">>></span> 
 	    <a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a>
     </li>
