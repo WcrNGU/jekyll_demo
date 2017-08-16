@@ -1,0 +1,234 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /*
+        用于增加透明背景色
+        background: rgba(0,0,0,.1);
+    */
+    -webkit-transition: background 200ms;
+    -moz-transition: background 200ms;
+    transition: background 200ms;
+}
+
+body {
+    font-size: 14px;
+    color: #444;
+    background: #f9f9f9;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    background: #eee;
+}
+
+nav .item {
+    display: inline-block;
+    padding: 6px 10px;
+    color: #666;
+}
+
+nav .item:hover {
+    color: #333;
+}
+
+header {
+    padding: 20px 0;
+}
+
+header .logo {
+    font-size: 30px;
+}
+
+header .search {
+    border: 2px solid #dd182d;
+    background: #dd182d;
+}
+
+header .search input,
+header .search button {
+    border: 0;
+    padding: 10px;
+    float: left;
+    /* 用于去除输入框被选中时的蓝色 */
+    outline: 0;
+}
+
+header .search input {
+    width: 80%;
+}
+
+header .search input:focus {
+    -webkit-box-shadow: inset 0 0 2px 2px rgba(0,0,0,.3);
+    -moz-box-shadow: inset 0 0 2px 2px rgba(0,0,0,.3);
+    box-shadow: inset 0 0 2px 2px rgba(0,0,0,.3);
+}
+
+header .search button {
+    background: #dd182d;
+    color: #fff;
+    width: 20%;
+}
+
+header .search button:hover {
+    background: #ce1829;
+}
+
+header .cart {
+    text-align: center;
+}
+
+header .cart a {
+    float: right;
+    width: 80%;
+    padding: 10px;
+    background: #fff;
+    border:1px solid #eee;
+    color:#dd182d;
+}
+
+footer {
+    margin-top: 30px;    
+    padding: 30px 0;
+    text-align: center;
+    background: #eee;
+    color: #999;
+}
+
+footer a {
+    color: #999;
+}
+
+.container {
+    display: block;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clearf:after,
+.clearf:before {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6 {
+    display: block;
+    position: relative;
+    min-height: 1px;
+    float: left;
+}
+
+.col-1 {
+    width: 10%;
+}
+
+.col-2 {
+    width: 20%;
+}
+
+.col-3 {
+    width: 30%;
+}
+
+.col-4 {
+    width: 40%;
+}
+
+.col-5 {
+    width: 50%;
+}
+
+.col-6 {
+    width: 60%;
+}
+
+.main-promote {
+    background: #eee;
+}
+
+.main-promote .cat {
+    background: #6e6568;
+    color: #fff;
+}
+
+.main-promote .cat .item {
+    padding: 15px 20px;
+}
+
+.main-promote .cat .item:hover {
+    background: rgba(0,0,0,.2);
+}
+
+.main-promote .info {
+    padding: 10px;
+    background: #fff;
+    color: #444;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.1);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.1);
+    box-shadow: 0 1px 2px rgba(0,0,0,.1);
+}
+
+.main-promote .info .auth {
+    line-height: 70px;/*行高*/
+}
+
+.main-promote .info .auno li {
+    margin-bottom: 12px;
+}
+
+.main-promote .info .avatar {
+    width: 50px;
+    height: 50px;
+    background: #aaa;
+    /* 边框的圆度，显示为圆型头像 */
+    border-radius: 50%;
+    float: left;
+    margin: 10px;
+}
+
+.cat-promote .title {
+    font-size: 22px;
+}
+
+/* 在类别名称前面加入一个图形 */
+.cat-promote .title:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 5px;
+    height: 22px;
+    background: #dd182d;
+    margin: 10px;
+}
+
+.cat-promote .item {
+    padding: 5px;
+}
+
+.cat-promote .item .card {
+    height: 300px;
+    background: #ccc;
+    border-radius: 6px;
+}
