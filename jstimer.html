@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+
+.tips {
+    text-align: center;
+    font-size: 4em;
+    font-family:'Microsoft YaHei';
+}
+
+.number {
+    height: 1.5em;
+    text-align: center;
+    font-size: 10em;
+    font-family:'Microsoft YaHei';
+}
+
+.button {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.button input {
+    font-size: 5em;
+    width: 3em;
+    height: 1.5em;
+}
+
+</style>
+
+<script>
+
+    var i=0;
+    var t;
+
+function formatTimeScr(){
+    var h=0,m=0,s=0;
+    h=parseInt(i/3600);
+    m=parseInt(i/60);
+    s=i%60;
+    var src = h + "时" + m + "分" + s + "秒"; 
+    return src;
+}
+
+function initialize()
+{
+    if(localStorage.time){
+        i=Number(localStorage.time); 
+        document.getElementById("parent").innerHTML=formatTimeScr();
+    }else{
+        localStorage.time = 1;
+    }
+}
+
+function timeCount(){
+    
+    document.getElementById("parent").innerHTML=formatTimeScr();
+    i=i+1;
+    t=setTimeout("timeCount()",1000);
+}
+
+function stopCount(){
+    
+    localStorage.time = i;
+    clearTimeout(t);
+    document.getElementById("parent").innerHTML=formatTimeScr();
+}
+
+function clearCount(){
+
+    if(confirm("Are you sure to clear the time ?"))
+    {
+        localStorage.removeItem("time");
+        location.reload(true);
+    }        
+}
+
+</script>
+</head>
+
+<body onload="initialize()">
+    <div class="tips">您目前共学习了：</div>
+    <div id="parent" class="number"></div>
+    <div class="button">
+        <input type="button" onclick="timeCount()" value="开始">
+        <input type="button" onclick="stopCount()" value="停止">
+        <input type="button" onclick="clearCount()" value="重置">
+    <div>
+</body>
+
+</html>
