@@ -40,7 +40,7 @@ flex布局
 ## JS部分
 js获取元素的方法：getElementById、getElementByClass、getElementByTagName，即通过ID、类名、标签名获取对应元素的对象  
 js获取当前时间：用Date对象
-JS文件位置有：head、body尾部、外部文件，<script scr="***.js" >  
+JS文件位置有：head、body尾部、外部文件，&lt script scr="***.js" &gt &lt /script &gt  
 JavaScript是脚本语言，与其它编程语言先编译全部代码再运行不同，脚本语言是逐行执行的。 
 var x="123";当数字被双引号包括时，变量会被作为字符串；如果把数字和字符串相加，结果将成为字符串。   
 js拥有动态数据类型，声明并未进行赋值的变量，类型为undefined，被赋值后类型自动转换为相应类型，再次以不同类型赋值后依然会进行自动转换。    
@@ -79,7 +79,7 @@ var person={firstname:"Bill", lastname:"Gates", id:5566}; //js对象的初始化
 <h1 onclick="this.innerHTML='谢谢!'">请点击该文本</h1>  //很多HTML元素都有onclick方法，h1也有，p也有  
 document.getElementById("id").onclick=function(){displayDate()};  //本句作用等同于上句  
 object.prototype.name=value; //使用prototype可以向对象添加成员变量  
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> //引用jQuery  
+&lt script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" &gt &lt /script &gt //引用jQuery  
 ```  
 
 ## 相关网络协议
