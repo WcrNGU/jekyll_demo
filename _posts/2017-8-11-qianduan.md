@@ -6,9 +6,9 @@ title: 前端开发知识梳理
 # {{page.title}}
 
 ## 快捷键
-在编辑器中输入elementname即相当于<elementname></elementname>
-在编辑器中输入.classname按回车即相当于<div class="classname"></div>
-选中一部分，按下Ctrl+d，就会选中接下来跟选中部分相同的部分。多光标。  
+- 在编辑器中输入elementname即相当于<elementname></elementname>
+- 在编辑器中输入.classname按回车即相当于<div class="classname"></div>
+- 选中一部分，按下Ctrl+d，就会选中接下来跟选中部分相同的部分。多光标。  
 
 ## HTML部分
 传统HTML的各种标签，做到标签语义化，以及HTML5的新特性   
