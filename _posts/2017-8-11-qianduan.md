@@ -1,5 +1,5 @@
 ---
-layout: defualt
+layout: poststyle
 title: 前端开发知识梳理
 ---
 

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title> {{ page.title }} </title>
+    <style>
+    
+* {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+body {
+    background-image:url(image/bg1.jpg);
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav {
+    height: 100px;
+    text-align: center;
+    padding: 25px;
+}
+
+.container {
+    font-size: 14px;
+    display: block;
+    max-width: 1080px;
+    margin: 0 auto;
+    background: #efe;
+}
+
+.home {
+    max-width: 80%;
+    margin: 0 auto;
+    padding-left:30px;
+    background-color:white;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <h2>
+                <a href="http://wcrngu.github.io/jekyll_demo/" > {{ page.title }} </a>
+            </h2>
+        </div>
+        <div class="side_bar"></div>
+        <div class='home'>
+            {{ content }}
+        </div>
+    </div>
+</body>
+</html>
