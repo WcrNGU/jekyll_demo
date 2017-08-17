@@ -1,55 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="content-type content=text/html; charset=utf-8" />
+    <meta charset="utf-8">
     <title> {{ page.title }} </title>
-    <style type='text/css'>
-        .home{
-            position:absolute;
-            left:25%;
-            top:10%;
-            width:60%;
-            margin-left:-100px;
-            padding-left:20px;
-            background-color:white;
-        }
-        .home p{
-            word-break: break-all;
-            font-size: 90%;
-        }
-        .home li{
-            color:brown;
-            font-size: 80%;
-            line-height: 30px;
-        }
-        .home li a{
-            color:black;
-            font-size:120%;
-            font-weight: lighter;
-        }
-        h2{
-            color:black;
-            font-size: 120%;
-            font-weight: lighter;
-        }
-        h2 a{
-            color: black;
-            font-size: 120%;
-        }
-        a{
-            text-decoration: none;
-        }
-        body{
-            background-image:url(image/bg1.jpg);
-        }
-        .jiantou{
-            color:red;
-        }
-    </style>
+    <!-- 重置浏览器样式，因为各个浏览器默认样式不同，所以引用网上的统一样式包 -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/normalize/7.0.0/normalize.min.css">
+	<link rel="stylesheet" href="defaultLayout.css">
 </head>
 <body>
-    <div class='home'>
-        {{ content }}
+    <div class="container">
+        <div class="nav">
+            <h2>
+                <a href="http://wcrngu.github.io/jekyll_demo/" > 
+                    {{ page.title }} 
+                </a>
+            </h2>
+        </div>
+        <div class="side_bar"></div>
+        <div class='home'>
+            {{ content }}
+        </div>
     </div>
 </body>
 </html>

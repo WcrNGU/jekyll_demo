@@ -1,6 +1,7 @@
 ---
 layout: defualt
 title: 操作系统复习
+category: review
 ---
 
 # {{page.title}}

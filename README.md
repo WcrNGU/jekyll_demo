@@ -25,3 +25,6 @@ def show
 end
 {% endhighlight %}
 ``` 
+## 更新：
+代码块展示
+博文分类可以调用jekyll的Category，在文件头中写入category及类型名
